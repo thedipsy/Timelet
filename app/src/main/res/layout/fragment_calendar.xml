@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".presentation.calendar.CalendarFragment"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/pullToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/background">
+
+      <include
+        android:id="@+id/loading_layout"
+        layout="@layout/content_loading"
+        android:visibility="visible" />
+
+      <include
+        android:id="@+id/content_layout"
+        android:visibility="gone"
+        layout="@layout/content_calendar" />
+
+      <include
+        android:id="@+id/error_layout"
+        android:visibility="gone"
+        layout="@layout/content_error" />
+
+      <include
+        android:id="@+id/no_network_layout"
+        android:visibility="gone"
+        layout="@layout/content_no_network" />
+
+    </FrameLayout>
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

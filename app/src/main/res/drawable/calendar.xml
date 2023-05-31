@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+  <path
+      android:pathData="M6.667,1.667V4.167"
+      android:strokeAlpha="0.4"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/nav_icon_color"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M13.333,1.667V4.167"
+      android:strokeAlpha="0.4"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/nav_icon_color"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M13.333,2.917C16.108,3.067 17.5,4.125 17.5,8.042V13.192C17.5,16.625 16.667,18.342 12.5,18.342H7.5C3.333,18.342 2.5,16.625 2.5,13.192V8.042C2.5,4.125 3.892,3.075 6.667,2.917H13.333Z"
+      android:strokeAlpha="0.4"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/nav_icon_color"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M17.292,14.667H2.708"
+      android:strokeAlpha="0.4"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/nav_icon_color"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M10,6.875C8.975,6.875 8.108,7.433 8.108,8.517C8.108,9.033 8.35,9.425 8.717,9.675C8.208,9.975 7.917,10.458 7.917,11.025C7.917,12.058 8.708,12.7 10,12.7C11.283,12.7 12.083,12.058 12.083,11.025C12.083,10.458 11.792,9.967 11.275,9.675C11.65,9.417 11.883,9.033 11.883,8.517C11.883,7.433 11.025,6.875 10,6.875ZM10,9.242C9.567,9.242 9.25,8.983 9.25,8.575C9.25,8.158 9.567,7.917 10,7.917C10.433,7.917 10.75,8.158 10.75,8.575C10.75,8.983 10.433,9.242 10,9.242ZM10,11.667C9.45,11.667 9.05,11.392 9.05,10.892C9.05,10.392 9.45,10.125 10,10.125C10.55,10.125 10.95,10.4 10.95,10.892C10.95,11.392 10.55,11.667 10,11.667Z"
+      android:fillColor="@color/nav_icon_color"
+      android:fillAlpha="0.4"/>
+</vector>

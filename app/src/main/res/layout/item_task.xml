@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginStart="8dp"
+  android:layout_marginTop="8dp"
+  android:layout_marginEnd="8dp">
+
+  <TextView
+    android:id="@+id/tv_index"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="19dp"
+    android:layout_marginBottom="19dp"
+    android:textColor="@color/gray"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="01." />
+
+  <TextView
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="7dp"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintStart_toEndOf="@+id/tv_index"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Title"
+    tools:textColor="@color/black" />
+
+  <TextView
+    android:id="@+id/tv_due_date"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:layout_marginEnd="16dp"
+    android:textColor="@color/gray"
+    android:textSize="12sp"
+    app:layout_constraintTop_toBottomOf="@id/tv_title"
+    app:layout_constraintStart_toStartOf="@id/tv_title"
+    app:layout_constraintBottom_toTopOf="@id/bottom_border"
+    tools:text="10.10.2020" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/bottom_border"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#AFACAC"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/barrier2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="end"
+      app:constraint_referenced_ids="bottom_border" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <ImageView
+    android:id="@+id/icon"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_margin="8dp"
+    tools:src="@drawable/ic_cateogry_shopping"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

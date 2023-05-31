@@ -47,7 +47,7 @@
     android:layout_height="wrap_content"
     android:layout_marginVertical="8dp"
     android:layout_marginHorizontal="16dp"
-    android:backgroundTint="@color/orange_light"
+    android:backgroundTint="@color/blue"
     android:text="@string/retry" />
 
 </LinearLayout>
